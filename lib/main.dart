@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pagingview/pagingview.dart';
 
+import 'carousel_demo.dart';
+
 void main() {
-  runApp(PagingView());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: PagingView(),
+      home: CarouselDemo(),
     );
   }
 }

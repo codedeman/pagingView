@@ -35,7 +35,7 @@ class _PagingView extends State<PagingView> {
           children: <Widget>[
 
             Container(
-              color: Colors.redAccent,
+//              color: Colors.redAccent,
 
               child: Center(
                   child: RaisedButton(
@@ -86,7 +86,13 @@ class _PagingView extends State<PagingView> {
             Container (
 
               color: Colors.white,
-              child: Image.asset('images/imagesBlur.png',fit: BoxFit.cover),
+              child: Image(
+
+                image: AssetImage("assets/images/imagesBlur.png"),
+
+              )
+//              Image.network("https://img.mayflower.vn/2018/09/Hoa-yêu-thương.jpg"),
+//              height: 300.0,
 
             )
 
