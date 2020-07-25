@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CarouselDemo extends StatefulWidget {
   CarouselDemo() : super();
@@ -54,7 +55,7 @@ class CarouselDemoState extends State<CarouselDemo> {
           children: <Widget>[
 
             carouselSlider = CarouselSlider(
-              height: 400.0,
+              height: 220.0,
               initialPage: 0,
               enlargeCenterPage: true,
               autoPlay: false,
@@ -94,9 +95,46 @@ class CarouselDemoState extends State<CarouselDemo> {
               height: 20,
             ),
 
-        Row(
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Container(
+
+              child: Text("Tình nhân",
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    fontSize: 40.0,
+                    color: Color(0xfff06744),
+
+                  ), ),
+
+            ),
+            SizedBox(
+              height: 8.0,
+            ),
+            Container(
+              alignment: Alignment.center,
+              child: Text("Hồng hay hường là tên gọi chung cho các loài thực vật có hoa dạng cây bụi hoặc cây leo lâu năm thuộc chi Rosa, họ Rosaceae, với hơn 100 loài với màu hoa đa dạng, phân bố từ miền ôn đới đến nhiệt đới",
+                style: TextStyle(
+                  fontStyle: FontStyle.italic,
+                  fontSize: 14.0,
+                  color: Color(0xff9a8585),
 
 
+                ),
+
+                textAlign: TextAlign.center,
+              ),
+
+
+            ),
+          ],
+
+
+        ),
+
+        SizedBox(
+          height: 37.0,
         ),
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -135,7 +173,7 @@ class CarouselDemoState extends State<CarouselDemo> {
               ),
             ),
             SizedBox(
-              height: 20.0,
+              height: 10.0,
             ),
 
             Container(
